@@ -29,9 +29,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
-  </ItemGroup>
-  <ItemGroup>
     <!--
 		 Add files present in the shared project folder, excluding the ones
 		 explicitly included in the projitem, so files can be added from vscode
