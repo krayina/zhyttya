@@ -23,19 +23,7 @@
     <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.4.13" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
-  </ItemGroup>
-	
-  <!--<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
-    <PackageReference Include="Uno.WinUI.Maps">
-      <Version>4.4.13</Version>
-    </PackageReference>
-  </ItemGroup>-->
-  <!--<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-maccatalyst'">
-    <PackageReference Include="Uno.WinUI.Maps">
-      <Version>4.4.13</Version>
-    </PackageReference>
-  </ItemGroup>-->
-	
+  </ItemGroup>	
   <Choose>
     <When Condition="'$(TargetFramework)'=='net6.0-android'">
       <ItemGroup>
