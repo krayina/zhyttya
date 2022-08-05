@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Zhyttya.UI.Uno.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
