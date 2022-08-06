@@ -2,6 +2,6 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-      <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+        
     </Grid>
 </Page>
