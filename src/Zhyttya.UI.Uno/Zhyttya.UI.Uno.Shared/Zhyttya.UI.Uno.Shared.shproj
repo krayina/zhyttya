@@ -11,9 +11,14 @@
   <Import Project="Zhyttya.UI.Uno.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.CSharp.targets" />
   <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\ChmonyaPage.xaml" />
     <UpToDateCheckInput Remove="Resources\Styles\DefaultTheme.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <_Globbed_Compile Remove="Pages\ChmonyaPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <_Globbled_Page Remove="Pages\ChmonyaPage.xaml" />
     <_Globbled_Page Remove="Resources\Styles\DefaultTheme.xaml" />
   </ItemGroup>
 </Project>

@@ -80,7 +80,7 @@ namespace Zhyttya.UI.Uno
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage), args.Arguments);
+                    rootFrame.Navigate(typeof(Pages.MainPage), args.Arguments);
                 }
                 // Ensure the current window is active
                 _window.Activate();

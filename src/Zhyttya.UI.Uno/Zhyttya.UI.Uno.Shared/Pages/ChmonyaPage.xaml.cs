@@ -1,10 +1,10 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
-namespace Zhyttya.UI.Uno
+namespace Zhyttya.UI.Uno.Pages
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class ChmonyaPage : Page
     {
-        public MainPage()
+        public ChmonyaPage()
         {
             this.InitializeComponent();
         }
