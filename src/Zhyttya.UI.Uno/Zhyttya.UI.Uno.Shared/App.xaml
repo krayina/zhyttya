@@ -5,9 +5,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!--<MapResources xmlns="using:Uno.UI.Maps"/>-->
-                <!-- Add resource dictionaries here -->                
+                <ResourceDictionary Source="/Resources/Styles/DefaultTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <!-- Add resources here -->
         </ResourceDictionary>
     </Application.Resources>
 
