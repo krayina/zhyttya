@@ -1,16 +1,28 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#FFCBCBCB"/>
+    <SolidColorBrush x:Key="TextColorThemeBrush" Color="Black"/>
 
     <Style TargetType="TextBlock">
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="14"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Foreground" Value="{StaticResource TextColorThemeBrush}"/>
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Foreground" Value="{StaticResource TextColorThemeBrush}"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="CornerRadius" Value="15"/>
+        <Setter Property="Padding" Value="20"/>
     </Style>    
 
     <Style TargetType="CalendarDatePicker">
-        <Setter Property="Foreground" Value="{ThemeResource CalendarDatePickerForeground}"/>
-        <Setter Property="Background" Value="{ThemeResource CalendarDatePickerBackground}"/>
+        <Setter Property="CornerRadius" Value="15"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Foreground" Value="{StaticResource TextColorThemeBrush}"/>
+        <Setter Property="Background" Value="White"/>
         <Setter Property="BorderBrush" Value="{ThemeResource CalendarDatePickerBorderBrush}"/>
         <Setter Property="BorderThickness" Value="{ThemeResource CalendarDatePickerBorderThemeThickness}"/>
         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -131,7 +143,7 @@
                                 </Grid.RowDefinitions>
 
                                 <ContentPresenter x:Name="HeaderContentPresenter" ContentTemplate="{TemplateBinding HeaderTemplate}" Grid.Column="1" Content="{TemplateBinding Header}" Grid.ColumnSpan="2" Margin="{StaticResource CalendarDatePickerTopHeaderMargin}" Grid.Row="0" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Collapsed" x:DeferLoadStrategy="Lazy"/>
-                                <TextBlock x:Name="DateText" Grid.Column="1" Foreground="{ThemeResource CalendarDatePickerTextForeground}" HorizontalAlignment="Left" Padding="0" Grid.Row="1" Text="{TemplateBinding PlaceholderText}" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="DateText" FontSize="14" Grid.Column="1" Foreground="{StaticResource TextColorThemeBrush}" HorizontalAlignment="Left" Padding="0" Grid.Row="1" Text="{TemplateBinding PlaceholderText}" VerticalAlignment="Center"/>
                                 <FontIcon x:Name="CalendarGlyph" Grid.Column="2" Foreground="{ThemeResource CalendarDatePickerCalendarGlyphForeground}" FontFamily="{ThemeResource SymbolThemeFontFamily}" FontSize="20" Glyph="&#xE787;" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="40"/>
                                 <ContentPresenter x:Name="DescriptionPresenter" AutomationProperties.AccessibilityView="Raw" Grid.Column="1" Content="{TemplateBinding Description}" Grid.ColumnSpan="2" Foreground="{ThemeResource SystemControlDescriptionTextForegroundBrush}" Grid.Row="2" x:Load="False"/>
                             </Grid>
