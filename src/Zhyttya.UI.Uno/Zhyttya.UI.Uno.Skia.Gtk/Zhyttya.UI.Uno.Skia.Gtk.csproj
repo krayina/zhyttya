@@ -14,7 +14,6 @@
     <UpToDateCheckInput Include="..\Zhyttya.UI.Uno.Shared\**\*.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="gmaps-api-net" Version="0.33.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
     <PackageReference Include="Uno.WinUI.Skia.Gtk" Version="4.4.13" />
