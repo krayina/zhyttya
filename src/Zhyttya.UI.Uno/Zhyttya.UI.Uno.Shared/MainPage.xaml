@@ -4,6 +4,14 @@
       mc:Ignorable="d android"
       Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </Page.Resources>
+    
     <Grid>
 
         <StackPanel Spacing="10">
@@ -25,19 +33,16 @@
             <!-- Info -->
             <Border Background="White" CornerRadius="20" Margin="20,0,20,0" Padding="20">
                 <StackPanel>
-                    <TextBlock Text="Андрей Анатольевич Рязанцев" FontSize="18"
-                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="Андрей Анатольевич Рязанцев"/>
 
-                    <TextBlock Text="22 ноября 1998" FontSize="18"
-                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="22 ноября 1998"/>
                 </StackPanel>
             </Border>
 
             <!-- Message -->
             <Border Background="#391e62" CornerRadius="20" Margin="20,0,20,0" Padding="20">
                 <StackPanel>
-                    <TextBlock Text="Оставить сообщение" FontSize="18" Foreground="White"
-                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="Оставить сообщение" Foreground="White"/>
                 </StackPanel>
             </Border>
 
