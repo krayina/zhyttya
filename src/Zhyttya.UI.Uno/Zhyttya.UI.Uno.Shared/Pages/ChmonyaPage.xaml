@@ -4,14 +4,6 @@
       mc:Ignorable="d android"
       Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Foreground" Value="Black"/>
-        </Style>
-    </Page.Resources>
-
     <Grid>
 
         <StackPanel Spacing="10">

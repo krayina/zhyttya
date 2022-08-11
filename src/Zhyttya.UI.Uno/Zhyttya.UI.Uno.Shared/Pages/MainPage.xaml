@@ -2,6 +2,27 @@
       Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel Margin="20,0,20,0">
 
+            <!-- Full name -->
+            <TextBox Background="White" CornerRadius="15" Padding="20"
+                     PlaceholderText="Номер телефона"/>
+
+            <!-- Full name -->
+            <TextBox Background="White" CornerRadius="15" Padding="20"
+                     PlaceholderText="Иванов Иван Иванович"/>
+
+            <!-- Date of birth of the prisoner -->
+            <CalendarDatePicker Background="White" CornerRadius="15" Padding="20,20,20,20"
+                                PlaceholderText="Дата рождения пленного"/>
+
+            <!-- Search -->
+            <Border Background="#391e62" CornerRadius="20" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="Поиск" Foreground="White"/>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
     </Grid>
 </Page>
