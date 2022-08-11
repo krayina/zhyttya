@@ -1,11 +1,15 @@
-﻿<Page x:Class="Zhyttya.UI.Uno.MainPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+﻿<Page x:Class="Zhyttya.UI.Uno.MainPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:android="http://uno.ui/android"
+      xmlns:not_android="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      mc:Ignorable="d android"
       Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
 
         <StackPanel Spacing="10">
+            
+            <!-- Image -->
             <Grid HorizontalAlignment="Center">
-                
                 <Ellipse Margin="10" Width="200" Height="200">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="ms-appx:///Resources/Images/chmonya.png" Stretch="UniformToFill"/>
@@ -16,9 +20,9 @@
                         HorizontalAlignment="Right" VerticalAlignment="Bottom">
                     <TextBlock Text="Пленный" FontSize="14" Foreground="#15bfb0"/>
                 </Border>
-
             </Grid>
-
+            
+            <!-- Info -->
             <Border Background="White" CornerRadius="20" Margin="20,0,20,0" Padding="20">
                 <StackPanel>
                     <TextBlock Text="Андрей Анатольевич Рязанцев" FontSize="18"
@@ -29,12 +33,18 @@
                 </StackPanel>
             </Border>
 
+            <!-- Message -->
             <Border Background="#391e62" CornerRadius="20" Margin="20,0,20,0" Padding="20">
                 <StackPanel>
                     <TextBlock Text="Оставить сообщение" FontSize="18" Foreground="White"
                                HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>
+
+            <!-- Browser -->
+            <android:WebView Source="https://youtube.com/embed/BCuGmQqhpkw" Height="315" Margin="10"/>
+            <not_android:WebView2 Source="https://youtube.com/embed/BCuGmQqhpkw" Height="315"/>
+
 
         </StackPanel>
 
