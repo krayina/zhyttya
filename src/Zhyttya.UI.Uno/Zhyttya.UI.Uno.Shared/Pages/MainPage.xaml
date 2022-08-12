@@ -2,24 +2,69 @@
       Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-            <!-- Full name -->
-            <TextBox PlaceholderText="Номер телефона"/>
+        <!-- Prisoner header -->
+        <Border Grid.Row="0" Background="#2b2731">
+            <TextBlock x:Name="headerTextBlock" Text="Информация о пленном" Foreground="White" FontSize="15" 
+                       HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20"/>
+        </Border>
+        
+        <!-- Prisoner info -->
+        <StackPanel x:Name="prisonerInfoStackPanel" Grid.Row="1" Margin="15" Spacing="5">
+            <!-- Prisoner full name -->
+            <TextBox PlaceholderText="Иванов Иван Иванович *"/>
 
-            <!-- Full name -->
-            <TextBox PlaceholderText="Иванов Иван Иванович"/>
+            <!-- Prisoner Date of birth -->
+            <CalendarDatePicker PlaceholderText="Дата рождения пленного *"/>
 
-            <!-- Date of birth of the prisoner -->
-            <CalendarDatePicker PlaceholderText="Дата рождения пленного"/>
+            <!-- Prisoner contacts -->
+            <TextBox PlaceholderText="Контакты пленного *"/>
 
-            <!-- Search -->
-            <Border Background="#391e62" CornerRadius="20" Padding="20">
-                <StackPanel>
-                    <TextBlock Text="Поиск" Foreground="White"/>
-                </StackPanel>
-            </Border>
+            <!-- Prisoner contacts -->
+            <TextBox PlaceholderText="Адрес проживания пленного *"/>
 
+            <!-- Prisoner military station -->
+            <TextBox PlaceholderText="Военская часть"/>
+
+            <!-- Prisoner rank -->
+            <TextBox PlaceholderText="Звание пленного"/>
+
+            <!-- Optional info -->
+            <TextBox PlaceholderText="Приметы"/>
         </StackPanel>
+
+        <!-- Owner info -->
+        <StackPanel x:Name="ownerInfoStackPanel" Grid.Row="1" Margin="15" Spacing="5" Visibility="Collapsed">
+            <!-- Owner full name -->
+            <TextBox PlaceholderText="Иванова Ирина Анатольевна"/>
+
+            <!-- Owner contacts -->
+            <TextBox PlaceholderText="Контактные данные"/>
+
+            <!-- Who are you? -->
+            <TextBox PlaceholderText="Кем приходитесь пленному"/>
+
+            <!-- Owner phone number -->
+            <Grid ColumnSpacing="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0" Text="+380" IsHitTestVisible="False"/>
+                <TextBox Grid.Column="1" PlaceholderText=""/>
+            </Grid>
+        </StackPanel>
+
+        <!-- Search -->
+        <Button x:Name="acceptButton" Grid.Row="2" Background="#391e62" CornerRadius="20" Padding="20" Margin="15,0,15,0"
+                HorizontalAlignment="Stretch" VerticalAlignment="Top"
+                Content="Далее" Foreground="White" Click="OnAcceptButtonClicked"/>
+
     </Grid>
 </Page>
